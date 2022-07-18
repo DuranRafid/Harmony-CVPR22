@@ -1,6 +1,6 @@
 import torch
 import numpy as np
-from model2D.model_fc import get_instance_model_optimizer, load_ckp
+from model2D.model import get_instance_model_optimizer, load_ckp
 from model2D.data import data_loader, estimate_optimal_gamma
 from model2D.train import train_model
 from model2D.evaluate import evaluate_model
