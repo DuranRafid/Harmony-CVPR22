@@ -53,7 +53,7 @@ Disentangling transformations other than rotation, translation, and scaling has 
 To disentangle rotation and translation from semantic content on 2D cryo-EM images, you can run the following:
 
 ```
-python main2D.py --dataset <dataset_name> --num-epochs <number of epochs> --z-dim <dimension of semantic latent factor> --pixel <number of pixels per dimension> --batch-size <Batch size for training> --learning-rate <learning-rate for training> --gamma <gamma parameter in Harmony loss function>
+python main3D.py --dataset <dataset_name> --num-epochs <number of epochs> --z-dim <dimension of semantic latent factor> --batch-size <Batch size for training> --learning-rate <learning-rate for training> --gamma <gamma parameter in Harmony loss function>
 ```
 
 For a demo, create a 'data' folder, download the [[demo dataset](https://cmu.box.com/s/vx45o7xa3qbz6tyd0ri6sxgpxus613wy)] from here, put the pickle files inside the 'data' folder and run the following command:
@@ -62,6 +62,15 @@ For a demo, create a 'data' folder, download the [[demo dataset](https://cmu.box
 python main3D.py --dataset harmony_3d_demo --num-epochs 200 --z-dim 1 --batch-size 100
 ```
 
+### Disentangling contrast from colored (RGB) images
+
+To disentangle semantic content (e.g., facial identity) from lighting condition transformation like contrast, you can run the following:
+
+```
+python main-color.py --dataset <dataset_name> --num-epochs <number of epochs> --z-dim <dimension of semantic latent factor> --batch-size <Batch size for training> --learning-rate <learning-rate for training> --gamma <gamma parameter in Harmony loss function>
+```
+
+If gamma is not set from the command line, the model will estimate the optimal gamma from the training dataset and batch-size. Such estimation worked well for our experiments. 
 
 ## Installation 
 Please follow the installation guide of AITom. 
