@@ -37,6 +37,7 @@ python main2D.py --dataset codhacs --num-epochs 100 --z-dim 1 --pixel 40 --batch
 ```
 </li>
 </ol>
+
 ### Disentangling full affine matrix 
 
 To disentangle full affine matrix (rotation, translation, and scaling) add a --scale command in the above mentioned command:
