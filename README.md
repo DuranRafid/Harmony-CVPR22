@@ -77,3 +77,16 @@ Please follow the installation guide of AITom.
 
 Alternatively, you could download all the scripts in aitom.classify.unsupervised.disentangled.harmony and modify the lines for importing modules to run Harmony independently. 
 
+### BibTeX
+
+If you use or modify the code from this project in your project, please cite:
+```bibtex
+@inproceedings{uddin2022harmony,
+  title={Harmony: A Generic Unsupervised Approach for Disentangling Semantic Content From Parameterized Transformations},
+  author={Uddin, Mostofa Rafid and Howe, Gregory and Zeng, Xiangrui and Xu, Min},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={20646--20655},
+  year={2022}
+}
+```
+Thank you!
