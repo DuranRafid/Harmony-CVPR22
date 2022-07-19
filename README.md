@@ -64,7 +64,7 @@ python main3D.py --dataset harmony_3d_demo --num-epochs 200 --z-dim 1 --batch-si
 
 ### Disentangling contrast from colored (RGB) images
 
-To disentangle semantic content (e.g., facial identity) from lighting condition transformation like contrast, you can run the following:
+To disentangle semantic content (e.g., facial identity) from lighting condition transformation (e.g.,contrast), you can run the following:
 
 ```
 python main-color.py --dataset <dataset_name> --num-epochs <number of epochs> --z-dim <dimension of semantic latent factor> --batch-size <Batch size for training> --learning-rate <learning-rate for training> --gamma <gamma parameter in Harmony loss function>
