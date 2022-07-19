@@ -29,7 +29,7 @@ To perform disentanglement on the codhacs dataset used in the paper, follow the 
 
 <li>Create a 'data' folder in the working directory</li> 
 <li>Change directory to the 'data' folder</li>
-<li>Download the dataset from [[CODH/ACS EM images](http://bergerlab-downloads.csail.mit.edu/spatial-vae/codhacs.tar.gz)] and extract them inside the 'data' folder</li>
+<li>Download the dataset from [CODH/ACS EM images](http://bergerlab-downloads.csail.mit.edu/spatial-vae/codhacs.tar.gz) and extract them inside the 'data' folder</li>
 <li>Run the following command:
 
 ```
